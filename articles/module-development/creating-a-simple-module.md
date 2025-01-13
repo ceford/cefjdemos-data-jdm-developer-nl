@@ -382,18 +382,18 @@ defined('_JEXEC') or die;
  */
 class FooHelper
 {
-	/**
-	 * Retrieve foo test
-	 *
-	 * @param   Registry        $params  The module parameters
-	 * @param   CMSApplication  $app     The application
-	 *
-	 * @return  array
-	 */
-	public static function getText()
-	{
-		return 'FooHelpertest';
-	}
+    /**
+     * Retrieve foo test
+     *
+     * @param   Registry        $params  The module parameters
+     * @param   CMSApplication  $app     The application
+     *
+     * @return  array
+     */
+    public static function getText()
+    {
+        return 'FooHelpertest';
+    }
 }
 ```
 
@@ -739,7 +739,7 @@ Later stellen we deze waarde in voor het maken van de hyperlink.
 
 ```php
 <a href="<?php echo $domain; ?>">
-	<?php echo '[PROJECT_NAME]' . $test; ?>
+    <?php echo '[PROJECT_NAME]' . $test; ?>
 </a>
 ```
 
@@ -765,7 +765,7 @@ $domain = $params->get('domain', 'https://www.joomla.org');
 ?>
 
 <a href="<?php echo $domain; ?>">
-	<?php echo '[PROJECT_NAME]' . $test; ?>
+    <?php echo '[PROJECT_NAME]' . $test; ?>
 </a>
 ```
 

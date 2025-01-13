@@ -40,33 +40,33 @@ je`[plugin-name].xml`, moet staan:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="4.0" type="plugin" group="filesystem" method="upgrade">
-	<name>plg_filesystem_myplugin</name>
-	<author>Joomla! Project</author>
-	<creationDate>April 2017</creationDate>
-	<copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<authorUrl>www.joomla.org</authorUrl>
-	<version>__DEPLOY_VERSION__</version>
-	<description>Description</description>
-	<files>
-		<filename plugin="myplugin">myplugin.php</filename>
-		<folder>SomeFolder</folder>
-	</files>
+    <name>plg_filesystem_myplugin</name>
+    <author>Joomla! Project</author>
+    <creationDate>April 2017</creationDate>
+    <copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>admin@joomla.org</authorEmail>
+    <authorUrl>www.joomla.org</authorUrl>
+    <version>__DEPLOY_VERSION__</version>
+    <description>Description</description>
+    <files>
+        <filename plugin="myplugin">myplugin.php</filename>
+        <folder>SomeFolder</folder>
+    </files>
 
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
-				<field
-					name="display_name"
-					type="text"
-					label="YOUR_LABEL"
-					description="YOUR_DESCRIPTION"
-					default="DEFAULT_VALUE"
-				/>
-			</fieldset>
-		</fields>
-	</config>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="display_name"
+                    type="text"
+                    label="YOUR_LABEL"
+                    description="YOUR_DESCRIPTION"
+                    default="DEFAULT_VALUE"
+                />
+            </fieldset>
+        </fields>
+    </config>
 </extension>
 ```
 
