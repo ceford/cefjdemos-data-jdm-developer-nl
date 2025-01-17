@@ -1,41 +1,20 @@
-<!-- Filename: J4.x:Cloud_File_Systems_for_Media_Manager / Display title: Cloud Bestands Systems voor Media Beheer -->
+<!-- Filename: J4.x:Cloud_File_Systems_for_Media_Manager / Display title: Cloud-bestandssystemen voor Media Manager -->
 
-<span id="main-portal-heading">GSoC 2017
-Cloud Bestands Systems voor Media Beheer
-Documentatie</span> [<img
-src="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/75px-Gsoc2016.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/113px-Gsoc2016.png 1.5x, https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/150px-Gsoc2016.png 2x"
-data-file-width="373" data-file-height="373" width="75" height="75"
-alt="Gsoc2016.png" />](https://docs.joomla.org/GSOC_2017 "GSOC 2017")
-Joomla!  4.x
+<span id="main-portal-heading">GSoC 2017 Cloud File Systemen voor Media Manager Documentatie</span> [<img src="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/75px-Gsoc2016.png" decoding="async" srcset="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/113px-Gsoc2016.png 1.5x, https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/150px-Gsoc2016.png 2x" data-file-width="373" data-file-height="373" width="75" height="75" alt="Gsoc2016.png" />](https://docs.joomla.org/GSOC_2017 "GSOC 2017") Joomla!  4.x
 
 ## Introductie
 
-**Joomla! 4.x** wordt standaard geleverd met cloud-bestandssystemen voor
-de **Media Manager**. Met de vorige API was het maken van aangepaste
-bestandssystemen een moeilijke taak. Dankzij de nieuwe API is het nu
-eenvoudig om een ​​aangepast bestandssysteem te maken. Als u een
-cloudservice wilt gebruiken met de nieuwe Media Manager, is het raadzaam
-om *'OAuth2.0'* te gebruiken.
+**Joomla! 4.x** wordt standaard geleverd met cloud-bestandssystemen voor de **Media Manager**. Met de vorige API was het maken van aangepaste bestandssystemen een moeilijke taak. Dankzij de nieuwe API is het nu eenvoudig om een aangepast bestandssysteem te maken. Als je een clouddienst wilt gebruiken met de nieuwe Media Manager, wordt geadviseerd om **OAuth2.0** te gebruiken.
 
-Dit document leidt u door belangrijke stappen om uw eigen **File System
-Plugin** te maken om de **Media Manager** uit te breiden. Voordat u
-verdergaat, moet u ervoor zorgen dat u de basiskennis hebt over het
-ontwikkelen van een plugin voor Joomla. [This
-tutorial](https://docs.joomla.org/J3.x:Creating_a_Plugin_for_Joomla "Special:MyLanguage/J3.x:Creating a Plugin for Joomla")
-kan hierbij helpen.
+Dit document zal je begeleiden door belangrijke stappen om je eigen **Bestandssysteem Plugin** te maken om de **Media Manager** uit te breiden. Voordat je verder gaat, zorg ervoor dat je de basiskennis hebt over hoe je een plugin voor Joomla kunt ontwikkelen. [Deze tutorial](https://docs.joomla.org/J3.x:Creating_a_Plugin_for_Joomla "Special:MyLanguage/J3.x:Creating a Plugin for Joomla") zou moeten helpen.
 
-## Maak je Filesystem plugin
+## Maak uw Filesystem-plug-in aan
 
 ### Configuratie
 
-Allereerst moeten we een **filesystem** plugin die Media beheer
-uitbreid. Deze plug-in moet enkele belangrijke kenmerken bevatten, zodat
-deze met Media Manager kan werken.
+Allereerst moeten we een **filesystem**-plug-in maken om de Media Manager uit te breiden. Deze plug-in moet enkele belangrijke eigenschappen bevatten zodat deze kan werken met de Media Manager.
 
-Zorg ervoor dat je plugin bevat`group="filesystem"`. Dus in
-je`[plugin-name].xml`, moet staan:
+Zorg ervoor dat uw plugin `group="filesystem"` bevat. Dus in uw `[plugin-name].xml`, zou u moeten hebben:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -70,37 +49,24 @@ je`[plugin-name].xml`, moet staan:
 </extension>
 ```
 
-De **display_name** parameter helpt Media Beheer de naam te tonen van je
-**File System** als basis in je bestands browser. Elke adapter die bij
-uw bestandssysteem hoort, wordt als "child" onder de root weergegeven.
+De parameter **display_name** helpt de Media Manager om de naam van je **Bestandssysteem** als een hoofdnode in de Bestandsbrowser weer te geven. Elke adapter die bij je Bestandssysteem hoort, wordt als kindelement onder de hoofdnode weergegeven.
 
-Neem all vereiste parameters op, zoals `App Secret` met geschikte
-formuliervelden.
+Neem alle vereiste parameters op die u nodig heeft, zoals `App Secret` met geschikte formuliervelden.
 
-### Plugin Events
+### Plug-in evenementen
 
 - `onFileSystemGetAdapters()`
 - `onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)`
 
 #### onFileSystemGetAdapters()
 
-**Any** De plug-n van het bestandssysteem moet de gebeurtenis bevatten
-met de naam`onFileSystemGetAdapters()` voor functionaliteit. Deze
-gebeurtenis moet een '**array** retouneren van
-`Joomla\Component\Media\Administrator\Adapter\AdapterInterface` als het
-is aangeroepen. Het event wordt georganiseerd wanneer u Media Manager
-opent. Elke `AdapterInterface` zal worden gemount aan de basis van je
-bestandssysteem.
+**Elke** Filesystem-plugin moet een evenement bevatten genaamd `onFileSystemGetAdapters()` voor functionaliteit. Dit evenement moet een **array** van `Joomla\Component\Media\Administrator\Adapter\AdapterInterface` retourneren wanneer het wordt aangeroepen. Het evenement wordt geactiveerd wanneer je de Media Manager opent. Elke `AdapterInterface` wordt onder de hoofdmap van je bestandssysteem gekoppeld.
 
 #### onFileSystemOAuthCallback()
 
-Deze gebeurtenis wordt geactiveerd wanneer u Media Manager gebruikt
-**OAuthCallbackHandler** voor OAuth2.0 Autorisatie- en
-authenticatieproces hieronder beschreven in het document. De gebeurtenis
-wordt alleen geactiveerd op de gevraagde plug-in. Het is dus niet nodig
-om te controleren op `$context` in een typisch scenario.
+Dit evenement wordt geactiveerd wanneer je de **OAuthCallbackHandler** van Media Manager hebt gebruikt voor het OAuth2.0 autorisatie- en authenticatieproces dat hieronder in het document wordt beschreven. Het evenement wordt alleen geactiveerd op de aangevraagde plugin. Het is dus niet nodig om `$context` te controleren in een typisch scenario.
 
-Een voorbeeld van het gebruik van deze gebeurtenis ziet eruit als:
+Een voorbeeld van het gebruik van het evenement ziet er als volgt uit:
 
 ```php
     public function onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)
@@ -123,33 +89,29 @@ Een voorbeeld van het gebruik van deze gebeurtenis ziet eruit als:
     }
 ```
 
-**OAuthCallbackEvent** bevat de invoer doorgestuurd naar de Media
-Manager OAuthCallback URI. `$event->getInput()` geeft een invoerobject
-terug.
+**OAuthCallbackEvent** bevat de invoer die is doorgestuurd naar de Media Manager OAuthCallback URI. `$event->getInput()` retourneert een Input Object.
 
-`$result` definieert hoe Joomla zich gedraagt ​​na een omleiding naar de
-callback. Er zijn verschillende mogelijke oplossingen beschikbaar:
+`$result` definieert hoe Joomla zich gedraagt na een omleiding naar de callback. Er zijn verschillende mogelijke oplossingen beschikbaar:
 
-- `action`
-  - sluit: Sluit een scherm dat is geopend door Javascript **using
+- `actie`
+  - sluit: Sluit een venster dat is geopend door een JavaScript **met
     window.open()**
-  - doorverwijzing: Doorverwijzing naar de pagina **redirect_uri**
-  - controle-paneel: Verwijs door naar het controle paneel
-  - media beheer: Verwijs door naar Media Beheer
+  - omleiden: Omleidt naar de pagina die is gespecificeerd door de **redirect_uri**
+  - controlepaneel: Omleiden naar het controlepaneel
+  - media-manager: Omleiden naar de Media Manager
 - `redirect_uri`
-  - Gebruikt met **redirect** actie (verplicht)
-- `message`
-  - Bericht moet getoond worden na een actie
-- `message_type`
+  - Wordt gebruikt met **omleiden** actie (vereist)
+- `boodschap`
+  - Boodschap moet worden weergegeven na een actie
+- `boodschap_type`
   - waarschuwing
-  - let op
+  - kennisgeving
   - fout
-  - bericht(of zet leeg)
+  - boodschap(of laat leeg)
 
-Nadat u alles hebt ingesteld, stelt u de`$result` argument van de
-`$event` terug te koppelen.
+Nadat je alles hebt ingesteld, stel je het `$result` argument van de `$event` in om het terug te geven aan de aanroeper.
 
-Een voorbeeld om een ​​bericht aan de gebruiker weer te geven zou zijn:
+Een voorbeeld om een bericht aan de gebruiker te tonen zou zijn:
 
 ```php
     $result = [
@@ -159,76 +121,47 @@ Een voorbeeld om een ​​bericht aan de gebruiker weer te geven zou zijn:
     ];
 ```
 
-Hiermee wordt u omgeleid naar Media Manager en wordt een melding
-weergegeven met de tekst **message**.
+Dit zal omleiden naar de Media Manager en een melding geven met de tekst in **bericht**.
 
-Deze methode zal meestal worden gebruikt om autorisatiecodes te
-verkrijgen voor het '**OAuth2.0** proces. In het geval van een
-**error**, Joomla! zal terugvallen op het bedieningspaneel en zal een
-foutmelding weergeven.
+Deze methode kan meestal worden gebruikt om autorisatiecodes te verkrijgen voor het **OAuth2.0**-proces. In geval van een **fout** zal Joomla! terugvallen naar het configuratiescherm en een foutmelding weergeven.
 
-## Authenticatie en authorisatie
+## Authenticatie en Autorisatie
 
-Joomla! 4.x adviseerd je gebruik OAuth2.0 voor dit proces. Het is
-gebruikelijk OAuth2.0 heeft een**redirect url** nodig om
-authenticatiegegevens door te geven aan de applicatie. Dit wordt meestal
-gedaan door een callback handler. Voor uw plugin hoeft u het wiel niet
-opnieuw uit te vinden, u kunt de **Callback Handler** of **Media
-Manager** gebruiken om de taak uit te voeren.
+Joomla! 4.x adviseert je om OAuth2.0 te gebruiken voor dit proces. Het is een veelvoorkomend scenario dat OAuth2.0 een **redirect url** vereist om authenticatiegegevens door te geven aan de applicatie. Dit wordt meestal gedaan door een callback handler. Voor je plugin hoef je het wiel niet opnieuw uit te vinden; je kunt de **Callback Handler** van **Media Manager** gebruiken om de taak te volbrengen.
 
-Het enige wat u moet doen is stel de *Redirect URI'* in om te volgen in
-OAuth2.0 Verstrek en implementeer
-de`onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)`
-in je plugin.
+Alles wat je hoeft te doen is de **Redirect URI** als volgt instellen in je OAuth2.0-voorziening en de `onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)` in je plugin implementeren.
 
-`[site-name]/administrator/index.php?option=com_media&task=plugin.oauthcallback&plugin=[your-plugin-name]`
+`[site-naam]/administrator/index.php?option=com_media&task=plugin.oauthcallback&plugin=[uw-plugin-naam]`
 
 In dit voorbeeld:
 `[site-name]/administrator/index.php?option=com_media&task=plugin.oauthcallback&plugin=myplugin`
 
-Wanneer u nu een omleiding van uw provider uitvoert zodra deze de
-opgegeven URL bereikt, de **Controller** voor de Media Manager zorgt
-ervoor dat uw plug-in wordt geïmplementeerd
+Nu, wanneer je een omleiding doet vanaf je provider zodra deze de opgegeven URL bereikt, zal de **Controller** voor Media Manager ervoor zorgen dat je plugin 
 `onFileSystemOAuthCallback(\Joomla\Component\Media\Administrator\Event\OAuthCallbackEvent $event)`
-voordat u er gegevens aan doorgeeft. Als dit niet het geval is, wordt u
-doorgestuurd naar het Configuratiescherm met een foutmelding.
+implementeert voordat enige gegevens worden doorgegeven. Zo niet, dan word je doorgestuurd naar het Configuratiescherm met een foutmelding.
 
-Als u alle ingevoerde gegevens hebt geïmplementeerd, wordt de
-cloudprovider opgenomen in de`$event`. You can access them using
-`$event->getInput()` en behandel het zoals gewoonlijk`input` inJoomla!.
+Als je alle ingangen hebt geïmplementeerd die worden doorgegeven, zal de Cloud Provider worden opgenomen in de `$event`. Je kunt er toegang toe krijgen met `$event->getInput()` en het behandelen als een gebruikelijke `input` voor Joomla.
 
-Nadat je de`input`hebt ontvangen, kan je het gebruiken om de details van
-uw cloudservice ophalen, zoals **Access Token**, **Refresh Token** enz.
+Nadat je de `input` hebt ontvangen, kun je deze gebruiken om de details van je clouddienst te verkrijgen, zoals **Access Token**, **Refresh Token** enzovoort.
 
-Als u meerdere accounts wilt onderscheiden, kunt u daarvoor ` Session `
-gebruiken.
+Als je meerdere accounts wilt onderscheiden, kun je `Session` daarvoor gebruiken.
 
-**Note**: Het wordt aangeraden om te controleren tegen **CSRF token**
-voordat je doorgaat met je request. De meeste cloudproviders
-ondersteunen de parameter ` status ` die kan worden gebruikt om de taak
-te vervullen.
+**Opmerking**: Het wordt aangeraden om te controleren op een **CSRF-token** voordat je je verzoek voortzet. De meeste cloudproviders ondersteunen de `state`-parameter die kan worden gebruikt om de taak te vervullen.
 
-### Gemeenschappelijke valkuilen
+### Veelvoorkomende valkuilen
 
-Het is verplicht om `urlencode()` je redirect uri wanneer je het naar de
-cloudprovider verzendt. Gebruik het om wangedrag van je cloud te
-voorkomen.
+Het is nodig om je redirect-uri te `urlencode()` wanneer je deze naar de cloudprovider stuurt. Gebruik dit om ongewenst gedrag van je cloud te voorkomen.
 
-## Bestand Serveren vanaf uw adapter
+## Bestand bedienen vanuit uw adapter
 
-Om uw mediabestanden van Media Manager aan te biede **Joomla! Site**
-`Joomla\Component\Media\Administrator\Adapter\AdapterInterface` helpt
-je. Deze interface bevat een speciale methode genaamd`getUrl($path)`.
+Om uw mediabestanden van de Media Manager naar **Joomla! Site** te serveren
+helpt `Joomla\Component\Media\Administrator\Adapter\AdapterInterface` u. Deze Interface bevat een speciale methode genaamd `getUrl($path)`.
 
 `$path : Pad is relatief ten opzichte van je root`
 
-De bedoeling van de methode is om een ​​ *'Public Absolute URL'* te geven
-voor het bestand dat u in de site wilt invoegen. Veronderstel
-bijvoorbeeld dat uw bestandspad ` /path/to/me.png ` is in de
-cloud-server. Nu kan een openbare URL zoiets zijn als
-` mycloud.com/share/u/myusername/path/to/me.png `. Hoe het wordt
-geserveerd, is helemaal aan jou. Wanneer een gebruiker een door media
-gegenereerde URL wil invoegen, wordt deze methode gebruikt.
+De bedoeling van de methode is om een **Openbare Absolute URL** te bieden voor het bestand dat je wilt invoegen op de site. Stel dat je bestandspad `/pad/naar/mij.png` is op de cloudserver. Een publieke URL zou dan iets kunnen zijn als `mycloud.com/share/u/mijngebruikersnaam/pad/naar/mij.png`. Hoe dit wordt aangeboden, is helemaal aan jou. Wanneer een gebruiker een gegenereerde media-URL wil invoegen, zal deze methode worden gebruikt.
 
-Meer details over `Adapter Interface` kunnen worden gevonden
-in`administrator/componenents/com_media/Adapter/AdapterInterface.php`
+Meer details over `Adapter Interface` zijn te vinden in `administrator/componenents/com_media/Adapter/AdapterInterface.php`.
+
+*Vertaald door openai.com*
+

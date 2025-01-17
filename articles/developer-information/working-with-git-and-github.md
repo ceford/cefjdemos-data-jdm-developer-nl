@@ -1,278 +1,145 @@
 <!-- Filename: Working_with_git_and_github / Display title: Werken met git en github -->
 
-# Introductie
+## Introductie
 
-Dit document geeft informatie over het bijdragen aan het Joomla! CMS met
-behulp van Git en Github. Als u graag op een eenvoudige wijziging (op
-een enkel bestand) wilt doen is het beter om deze documentatie te
-raadplegen: <a
-href="https://docs.joomla.org/Special:Nl/Using_the_Github_UI_to_Make_Pull_Requests"
-class="new"
-title="Special:Nl/Using the Github UI to Make Pull Requests (page does not exist)">De
-Github UI gebruiken om een Pull Request in te dienen</a> Als u meer
-complexe wijzigingen wilt doorvoeren of geïnteresseerd bent, lees dan
-vooral door!
+Dit document zal informatie verschaffen over het bijdragen aan de Joomla! CMS met behulp van Git en GitHub. Als je een eenvoudige wijziging wilt maken (slechts één bestand), is het gemakkelijker om deze documentatie te gebruiken: [Using the Github UI to Make Pull Requests](https://docs.joomla.org/Using_the_Github_UI_to_Make_Pull_Requests). Als je meer complexe wijzigingen wilt toevoegen of je bent hier gewoon in geïnteresseerd, lees dan verder!
 
-## Wat zijn Git en GitHub
+## Wat zijn Git en GitHub?
 
-Git is een gedistribueerd versiebeheersysteem. Het is een systeem dat
-wijzigingen in bestanden registreert en deze wijzigingen in een
-historisch bestand opslaat. U kunt altijd terug kijken in een eerdere
-versie van uw code en indien gewenst wijzigingen herstellen. Door het
-historisch archief is Git erg handig als je met veel mensen samenwerkt
-in hetzelfde project.
+Git is een gedistribueerd versiebeheersysteem. Het is een systeem dat wijzigingen in bestanden bijhoudt en deze wijzigingen opslaat in een geschiedenisbestand. Je kunt altijd terugkijken naar een eerdere versie van je code en wijzigingen herstellen als je dat wilt. Vanwege het geschiedenisarchief is Git zeer nuttig wanneer je met veel mensen samenwerkt aan hetzelfde project.
 
-Dit is hoe GitHub gebruikt kan worden.
-<a href="https://www.github.com" class="external text" target="_blank"
-rel="nofollow noreferrer noopener">GitHub</a> is een website die bij het
-beheren van Gitprojecten op een visuele manier helpt. Als een eigenaar
-van een project kan je de code wijzigen en vergelijken met verschillende
-versies. Als een gebruiker van een project kunt u door het maken van een
-Pull Request een bijdrage leveren. Een Pull Request is een verzoek aan
-de eigenaar om wat code in het project te plaatsen. U biedt een stuk
-code aan (misschien de oplossing voor een bug) en hiermee vraagt u de
-projecteigenaar of hij deze code wilt gebruiken. Als de eigenaar het wil
-kan hij deze code samenvoegen (merge) in zijn project.
+Hier is hoe GitHub kan worden gebruikt. [GitHub](https://www.github.com) is een website die helpt bij het beheren van Git-projecten op een visuele manier. Als eigenaar van een project kun je de code wijzigen en verschillende versies vergelijken. Als gebruiker van het project kun je bijdragen door een Pull Request te maken. Een pull request is een verzoek aan de eigenaar om wat code in het project op te nemen. Je biedt een stuk code aan (misschien een oplossing voor een bug) en vraagt of de projecteigenaar het wil gebruiken. Als de eigenaar het leuk vindt, kan hij het samenvoegen (toevoegen) aan zijn project.
 
-Joomla! gebruikt GitHub en Git om zijn code te beheren. Iedereen kan
-bijdragen aan de Joomla! software. De URL naar het Joomla! CMS Project
-op GitHub is:
-<a href="https://github.com/joomla/joomla-cms" class="external free"
-target="_blank"
-rel="nofollow noreferrer noopener">https://github.com/joomla/joomla-cms</a>
+Joomla! gebruikt GitHub en Git om zijn code te onderhouden. Iedereen kan bijdragen aan Joomla! software via zijn [Github-repository](https://github.com/joomla/joomla-cms).
 
-## Aan de slag
+## Meld je aan bij GitHub en installeer Git
 
-## Aanmelden op GitHub en Git installeren
+Eerst moet je je [registreren bij Github](http://www.github.com). Het is gratis en eenvoudig te doen. Volg gewoon de aangegeven stappen.
 
-Als eerste moet u zich op
-<a href="http://www.github.com" class="external text" target="_blank"
-rel="nofollow noreferrer noopener">GitHub</a> registreren. Het is gratis
-en erg makkelijk. Volg de opgegeven stappen.
+Zodra je bent aangemeld, moet je Git installeren op de computer die je gebruikt voor ontwikkeling (werkstation of laptop). Volg de installatie-instructies op de [git](http://git-scm.com) website. Git is een CLI (Command Line Interface) programma. In het begin kan dit verwarrend en een beetje eng zijn, maar dit document zal je door het proces leiden.
 
-Nu u aangemeld bent kunt u Git installeren. De laatste versie van Git
-kan gevonden worden op
-<a href="http://git-scm.com" class="external free" target="_blank"
-rel="nofollow noreferrer noopener">http://git-scm.com</a>. Download en
-start het installatiebestand. Git is een CLI (command line interface)
-programma. In het begin kan dit verwarrend en angstig zijn maar dit
-document zal u door het proces leiden.
+Als je geen gevorderde gebruiker bent, start dan de installer en druk op de "volgende" knoppen totdat het programma is geïnstalleerd. Git zal je systeem niet beschadigen. Later kun je het verwijderen zoals elk ander programma.
 
-Als u niet een geavanceerde gebruiker bent kunt u gewoon het
-installatiebestand starten en op de "Volgende" knop drukken totdat het
-programma geïnstalleerd is. Git zal uw systeem niet schaden. U kunt het
-later, indien gewenst, verwijderen zoals u dat met andere programma's
-ook doet.
+Met Git geïnstalleerd, open je een Terminal-applicatie. Begin met het instellen van je Git-naam en e-mailadres. Git zal deze informatie gebruiken wanneer je bijdraagt aan een project:
 
-Zodra we Git hebben geïnstalleerd kunnen we het programma genaamd "Git
-Bash" starten. Er zal een commandoregel geopend worden. We gaan Git onze
-naam en e-mailadres geven. Git zal deze gegevens gebruiken wanneer we
-een bijdrage leveren aan een project. Met de volgende commandos kunnen
-we Git deze gegevens geven±
-
+```sh
     git config --global user.name "Your name"
     git config --global user.email youremail@mail.com
+```
 
-In de bovenstaande commandos, en bij alle overige commandos die in deze
-documentatie staat, zal een nieuwe regel een nieuw commando zijn. Dus u
-typt de eerste regel, drukt op enter en begint met de tweede regel en
-drukt weer op enter.
+In de bovenstaande commando's, en alle andere commando's die in deze documentatie worden gegeven, is elke regel een nieuw commando. Dus je typt de eerste regel, drukt op enter en typt vervolgens de tweede regel en drukt op enter.
 
-We zijn nu klaar om Git te gebruiken en gaan verder met het instellen
-van onze testinstallatie.
+Je bent nu klaar om Git te gebruiken en verder te gaan met het instellen van je testinstallatie.
 
-# Instellen van de testinstallatie
+## Opzetten van een testinstallatie
 
-Voor onze testinstallatie hebben we een webserver programma nodig zodat
-we Joomla op onze computer kunnen installeren. Er zijn verschillende
-programma's die dit kunnen verzorgen zoals
-<a href="https://www.mamp.info/MAMP" class="external autonumber"
-target="_blank" rel="nofollow noreferrer noopener">[1]</a> en
-<a href="https://www.apachefriends.org/XAMPP"
-class="external autonumber" target="_blank"
-rel="nofollow noreferrer noopener">[2]</a>. Download en installeer één
-van deze programma's.
+Voor uw testinstallatie heeft u een softwarestack nodig zodat u Joomla! op uw computer kunt installeren en uitvoeren. Stacks zoals MAMP, XAMP of WAMP worden elders in deze documentatie behandeld.
 
-Na de installatie van een programma als dat (in dit voorbeeld wordt MAMP
-gebruikt) kunnen we de laatste versie van Joomla! installeren. In ons
-geval is de laatste versie van Joomla! niet de stabiele versie. De
-laatste versie van Joomla! is de "staging branche" op GitHub. We gaan
-eerst GitHub wat beter uitleggen.
+Na de installatie van je softwarestack moet je de nieuwste versie van Joomla! installeren. Dit is niet de laatste stabiele release. De laatste versie van Joomla! is de ontwikkelingsversie op GitHub.
 
-## "Fork" en kloon Joomla!
+## Fork en clone Joomla!
 
-Op GitHub kunt u verschillende projecten vinden, de zogenaamde
-"Repositories". In een project kunt u verschillende versies vinden. Zo'n
-versie heet een "branch". Joomla! heeft de volgende "branches":
+Op GitHub kun je projecten vinden in zogenaamde Repositories. Binnen een project kun je verschillende versies vinden. Zo'n versie wordt een Branch genoemd. Joomla! heeft de volgende branches:
 
-- "'Staging:"' Deze "branch" bevat de laatste bugfixes en nieuwe
-  features van Joomla!
-- "'Master:"' Deze branche is de huidige stabiele versie van Joomla!
-- "'3.5-dev"' Deze branche bevat de bestanden voor Joomla! 3.5 welke, op
-  moment van schrijven, nog niet de stabiele versie is.
+- **4.2-dev** Bestanden voor de ontwikkeling van de huidige versie.
+- **4.3-dev** Bestanden voor de ontwikkeling van de volgende kleine versie.
+- **4.4-dev** Bestanden voor de ontwikkeling van de een-na-volgende kleine versie.
+- **5.0-dev** Bestanden voor de ontwikkeling van de volgende grote versie.
 
-Op onze testlocatie gaan we de **Staging** "branche" gebruiken maar als
-we deze "branche" direct gaan gebruiken dan hebben we een probleem. We
-kunnen deze "branche" niet aanpassen omdat we niet de eigenaar zijn. We
-maken er een kopie van. Op GitHub heet dit een "Fork". Hier zijn we dan
-eigenaar van en kunnen het dus wijzigen. Na het wijzigen kunnen we onze
-"Fork" vergelijken met het originele project. Nu kunnen we een "Pull
-Request" aanmaken voor de wijzigingen die we hebben gemaakt. Daarover
-later meer. U kunt van een "branche" een "Fork" maken door op de "Fork"
-knop te drukken op de
-<a href="https://github.com/joomla/joomla-cms" class="external text"
-target="_blank" rel="nofollow noreferrer noopener">Joomla! CMS Github
-Repository</a>. Deze knop bevindt zich aan de rechter bovenkant van de
-pagina.
+Op je testcomputer ga je de **4.2-dev** branch gebruiken. Je kunt deze branch echter niet wijzigen, omdat je niet de eigenaar ervan bent. Je moet er een kopie van maken. Op GitHub wordt dit een Fork genoemd. Je bent de eigenaar van die kopie, dus je kunt deze wijzigen. Na het wijzigen van je fork kun je een Pull Request indienen voor de veranderingen die je hebt aangebracht. Daarover later meer. Je kunt een branch forken door op de Fork-knop in de [Joomla! CMS Github Repository](https://github.com/joomla/joomla-cms) te drukken. Deze knop bevindt zich rechtsboven op de pagina.
 
-<img src="https://docs.joomla.org/images/6/6c/Github-fork-button.png"
-decoding="async" data-file-width="1002" data-file-height="222"
-width="1002" height="222" alt="Github-fork-button.png" />
+![Fork joomla in github](../../../en/images/getting-started/core-git-fork-joomla.png)
 
-Nadat we de "Fork" hebben aangemaakt kunnen we Joomla! op onze lokale
-server installeren. Ga naar de map waar u de bestanden van de webserver
-kan uitvoeren. De meeste programma's gebruiken een map als `htdocs`.
-Zodra we in deze map zitten, klik op de rechtermuis toets en klik op:
-"Git Bash Here". De command line zal openen op deze locatie.
+Na het forken moet je Joomla! installeren op je lokale computer. Ga naar de map waar je bestanden kunt plaatsen die door je webserver worden gebruikt. Veel programma's gebruiken een map genaamd `htdocs`. Sommigen gebruiken `www` en sommigen gebruiken geheel andere mappen. Het hangt allemaal af van of je Windows, Mac of Linux gebruikt. Uiteindelijk zal je webroot verschillende mappen bevatten voor verschillende websites. Zodra je in je webrootmap bent, gebruik je in een open Terminal-venster het cd-commando om de huidige map te wijzigen naar de webroot. Of, in je bestandsverkenner GUI, zoek de webrootmap, druk op de rechtermuisknop en klik op: "Git Bash Here" of "Open Terminal" of iets dergelijks.
 
-Typ de volgende opdracht om de bestanden van de "Fork" van het Joomla!
-CMS naar uw computer te downloaden. Vervang *Gebruikersnaam* met de
-gebruikersnaam die u gebruikt op GitHub.
+In de Terminal, met de site-rootmap ingesteld als de huidige map, typ je de volgende opdracht om de bestanden van je Fork van de Joomla! CMS naar je computer te downloaden. Vervang *username* door de gebruikersnaam die je gebruikt op GitHub.
 
+```sh
     git clone https://github.com/username/joomla-cms.git
+```
 
-U zal Git moeten openen via de bovenstaande beschreven stappen om alle
-commando's uit te voeren die in deze documentatie worden gegeven.
-Onthoudt dat voor alle andere commando's in deze documentatie.
+Het kloonproces kan enige tijd duren. Wanneer het voltooid is, zal je webroot een map bevatten genaamd joomla-cms. Je moet die map de huidige map maken om git-commando's voor die map uit te voeren:
 
-Als Git klaar is kunt u de browser starten en naar de installatie op uw
-localhost gaan. Meestal is de URL iets als:
-<a href="http://localhost/joomla-cms" class="external free"
-target="_blank"
-rel="nofollow noreferrer noopener"><code>http://localhost/joomla-cms</code></a>.
-U zult nu een standaard Joomla! installatie zien.
+```sh
+    cd joomla-cms
+```
 
-## Installeer Joomla!
+Denk eraan dat voor andere commando's in deze documentatie.
 
-De installatie van Joomla! op onze lokale testinstallatie is bijna
-hetzelfde als een reguliere installatie. Er zijn twee kleine
-verschillen.
+## Joomla! installeren
 
-Bij de database-instellingen zijn de gebruikersnaam en wachtwoord
-standaard. Meestal is de gebruikersnaam `root` en het wachtwoord is ook
-`root` of er is geen wachtwoord. Als u nog steeds de database niet kan
-bereiken dan kunt u in de handleiding van uw lokale webserver kijken
-voor de gebruikersnaam en het wachtwoord.
+Je gedownloade clone van je geforkte repository heeft verdere actie nodig voordat het klaar is voor gebruik. Een van de gedownloade bestanden is genaamd README.md. Open het met een teksteditor en volg de instructies in de sectie **Hoe een werkende installatie vanaf de bron te krijgen**.
 
-Het laatste verschil is de laatste stap van de installatie. Normaliter
-moeten we de installation-map verwijderen om verder te gaan naar de
-backend of frontend van onze website. Voor de testinstallatie kunnen we
-dit overslaan en kunnen we direct naar de backend of front-end gaan.
-Verwijder de installation-map niet. Dit kan erg nuttig zijn bij het
-opnieuw installeren van Joomla!
+Wanneer u klaar bent, opent u uw browser en gaat u naar de installatie op uw localhost. Meestal is de URL iets zoals:
+`http://localhost/joomla-cms`. U ziet nu het standaard Joomla!-installatieproces.
 
-# Maak uw wijzigingen
+## Wijzigingen in de code aanbrengen
 
-Nu is het tijd om ons Joomla! bestand te wijzigen. Alle wijzigingen die
-gemaakt worden zullen worden geregistreerd door Git. Op elk moment kunt
-u via de commando `git status` zien welke bestanden gewijzigd zijn en
-welke niet worden "Untracked" (gemonitord). "Untracked" betekent dat het
-bestand op de locatie nieuw is voor Git.
+Alle wijzigingen die je aanbrengt in de Joomla-code op je lokale site worden geregistreerd en gemonitord door Git. Op elk moment kun je het commando `git status` typen om te zien welke bestanden zijn gewijzigd of niet gevolgd. Niet gevolgd betekent dat het bestand op die locatie nieuw is voor Git.
 
-Als u een vergissing heeft gemaakt of een bestand wilt herstellen, kunt
-u dit commando gebruiken:
+In dit stadium is het waarschijnlijk het beste om een Integrated Development Environment (IDE) te gebruiken om aan Joomla Code te werken. Visual Studio Code (VSCode) wordt sterk aanbevolen. Het is gratis en werkt op alle platformen. Met VSCode kun je wijzigingen aanbrengen, **Commit** naar je lokale Git-kloon en **Push** naar je externe GitHub-fork.
 
-    git checkout path/to/file
+## Wijzigingen naar de Fork pushen
 
-Als u de wijzigingen die u hebt gemaakt wilt verwijderen, gebruik dan
-het volgende commando:
+Het uploaden van wijzigingen wordt in Git-termen een `push` genoemd. Voordat je dat kunt doen, moet je iets heel belangrijks doen. Je moet een nieuwe branch aanmaken voor je wijzigingen. (Een branch is een versie van je project, weet je nog?) Als je dat niet doet en je wijziging direct in de huidige branch maakt, zal er de eerste keer geen probleem zijn. Maar als je een tweede keer wijzigingen aanbrengt en de wijzigingen die je eerste keer hebt gemaakt zijn nog niet samengevoegd, zullen al deze wijzigingen ook worden geregistreerd als nieuwe wijzigingen.
 
-    git checkout .
-    git clean -f -d
+U kunt VSCode instellen om al de volgende opdrachten met een paar klikken uit te voeren. Maar als u git-opdrachten vanaf de terminal-opdrachtregel wilt gebruiken:
 
-Het eerste commando reset alle bestanden. Het tweede verwijdert alle
-"untracked" bestanden en mappen.
+Dus de eerste opdracht die je gaat uitvoeren zal een nieuwe branch aanmaken. Vervang name-new-branch met de naam van de nieuwe branch. Deze naam moet kort zijn en mag alleen kleine letters en cijfers bevatten. Gebruik **GEEN** spaties. Gebruik in plaats van spaties een - (minus).
 
-## Onze wijzigingen publiceren op GitHub
-
-# "Push" de wijziging naar de "fork"
-
-Nadat alle wijzigingen gemaakt zijn moeten we onze wijzigingen uploaden
-naar onze "repository" op GitHub. Hierna kunnen we een "pull request"
-maken met onze wijzigingen.
-
-Het uploaden van de wijzigingen heet `"push"` in Git terminologie.
-Voordat we dat kunnen doen moeten we eerst iets anders belangrijks doen.
-We moeten een nieuwe "branch" aanmaken voor onze wijzigingen. (Een
-"branche" is een versie van ons project, weet u nog?) als we dit niet
-doen en we maken onze wijziging direct in de "staging branch" dan zal de
-eerste keer daar geen probleem mee zijn. Maar wanneer we wijzigingen
-voor de tweede keer maken en eerste wijzigingen zijn nog niet "gemerged"
-zullen al die wijzigingen ook als nieuwe wijzigingen beschouwd worden.
-
-Dus onze eerste commando dat we uitvoeren is het creëren van een nieuwe
-"branche". Het voorkomt het hier boven beschreven probleem. Vervang
-"name-new-branche" met de naam van uw nieuwe "branche". Deze naam moet
-kort zijn en kan alleen kleine letters en getallen bevatten. Gebruik
-**GEEN** spaties. In plaats van spaties kan de - (minus) gebruikt
-worden.
-
+```sh
     git checkout -b name-new-branch
+```
 
-De volgende commando verteld git dat alle wijzigingen goed zijn en klaar
-staan om te worden "commit".
+De volgende opdracht vertelt git dat alle wijzigingen klaar zijn om te committen.
 
+```sh
     git add --all
+```
 
-Het volgende commando voegt onze wijziging toe aan de "branche". Vervang
-het bericht door een korte beschrijving van de wijzigingen die gemaakt
-zijn. Deze beschrijving zal de titel zijn van de "pull request" die we
-gaan maken.
+De volgende opdracht voegt je wijziging toe aan de branch. Vervang het bericht a.u.b. door een korte beschrijving van je wijzigingen. Deze beschrijving zal de titel zijn van de pull-aanvraag die je gaat maken.
 
+```sh
     git commit -m "description"
+```
 
-Het laatste commando zal de wijzigingen uploaden ("push") naar onze
-"fork" Vervang alstublieft name-new-branche- door de naam van de
-"branche" die u een paar stappen eerder gekozen heeft.
+De laatste opdracht zal de wijzigingen naar je fork pushen (uploaden). Vervang name-new-branch met de naam van de branch die je een paar stappen hierboven hebt gemaakt.
 
+```sh
     git push origin name-new-branch
+```
 
-## Vergelijk "forks" en doe een "pull request"
+## Vergelijk Forks en Maak een Pull Request
 
-Nadat onze wijziging ge"pusht" is naar GitHub kan u naar uw Joomla! CMS
-"fork" gaan.
+Nadat je je wijziging naar GitHub hebt gepusht, ga je naar je fork van de Joomla! CMS op de GitHub-site. Selecteer je branch en maak een pull request.
 
-# Meer informatie
+Wanneer je klaar bent, schakel in je lokale kloon terug naar de oorspronkelijke branch:
 
-Omdat de "staging' versie van Joomla! op elk moment kan wijzigen is het
-erg nuttig om de mogelijkheid te hebben om onze "fork" up-to-date te
-kunnen houden. We kunnen dit doen door een "remote" toe te voegen aan
-onze project "fork".
+```sh
+git checkout 4.2-dev
+```
 
+Je kunt nu nieuwe wijzigingen aanbrengen zonder de wijzigingen in je vorige branch te beïnvloeden.
+
+## Op de hoogte blijven
+
+Omdat de huidige versie van Joomla! elke dag kan veranderen, is het belangrijk om je fork up-to-date te houden. Je kunt dat doen door de oorspronkelijke Joomla repository toe te voegen aan je geforkte project:
+
+```sh
     git remote add upstream https://github.com/joomla/joomla-cms.git
+```
 
-We hebben nu een "remote" genaamd "upstream" toegevoegd. Met het
-volgende commando kunnen we Git laten zoeken naar nieuwe "commits" in de
-"staging branch" die we niet in onze "fork" hebben.
+Werk vervolgens je lokale kloon bij met het volgende commando:
 
-    git pull upstream staging
+```sh
+    git pull upstream 4.2-dev
+```
 
-De wijzigingen zijn nu alleen in onze lokale "fork" gemaakt. We kunnen
-ze met het volgende commando naar GitHub uploaden:
+En update je externe fork:
 
+```sh
     git push
+```
 
-  
-<a
-href="https://docs.joomla.org/index.php?title=Categorie:_Bug_Squad/nl_Bug_Squad&amp;action=edit&amp;redlink=1"
-class="new"
-title="Categorie: Bug Squad/nl Bug Squad (page does not exist)">Categorie:
-Bug Squad/nl Bug Squad</a> <a
-href="https://docs.joomla.org/index.php?title=Categorie:_Ontwikkeling/nl_Ontwikkeling&amp;action=edit&amp;redlink=1"
-class="new"
-title="Categorie: Ontwikkeling/nl Ontwikkeling (page does not exist)">Categorie:
-Ontwikkeling/nl Ontwikkeling</a> <a
-href="https://docs.joomla.org/index.php?title=Categorie:GitHub/nl_GitHub&amp;action=edit&amp;redlink=1"
-class="new"
-title="Categorie:GitHub/nl GitHub (page does not exist)">Categorie:GitHub/nl
-GitHub</a>
+*Vertaald door openai.com*
+
