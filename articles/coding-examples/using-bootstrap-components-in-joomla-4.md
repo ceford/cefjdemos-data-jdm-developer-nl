@@ -389,7 +389,7 @@ Inklappen wordt veel gebruikt in Joomla en je hebt mogelijk geen module of plugi
 
 Resultaat:
 
-![Bootstrap collaps](../../../en/images/coding-examples/coding-examples-collapse.png)
+![Bootstrap collapse](../../../en/images/coding-examples/coding-examples-collapse.png)
 
 ### Voorbeeld 5: Dropdown
 
@@ -585,7 +585,7 @@ Resultaat:
 
 De betrokken stappen:
 
-- Download, installeer en activeer deze plugin: [](https://github.com/ceford/j4xdemos-plg-bscompos/raw/master/plg_j4xdemos_bscompos.zip)
+- Download, installeer en activeer deze [plugin](https://github.com/ceford/j4xdemos-plg-bscompos/raw/master/plg_j4xdemos_bscompos.zip)
 - Voeg in het artikel de tekst toe waarop de plugin actie onderneemt, bijvoorbeeld {bscompos modal carousel} zal het laden van de JavaScript triggeren die nodig is om een modale dialoog en een carrousel te ondersteunen. De plugin verwijdert de triggertekst en de omringende (nu) lege tags.
 - Voeg de Bootstrap Component HTML-code direct in het artikel of in een module opgenomen in het artikel toe. Hieronder is voorbeeld HTML-code voor een eenvoudige Modal en een Modal met daarin een Carrousel. Let op dat dit niet werkt als de HTML-code zich in een module op een sjabloonlocatie bevindt.
 - Dit zal ook werken voor een standaard Aangepaste module als de Optie Inhoud Voorbereiden is ingesteld op Ja.
@@ -784,4 +784,3 @@ Deze code zoekt naar klassenamen ingesteld in mod_custom en maakt de HTMLHelper-
 ![Bootstrap modal carousel](../../../en/images/coding-examples/coding-examples-modal-carousel.png)
 
 *Vertaald door openai.com*
-
