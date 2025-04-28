@@ -276,7 +276,7 @@ Taartdagen?
 
 ## Referenties
 
-Uit de Joomla! Documentatie: [Visual Studio Code](https://docs.joomla.org/Visual_Studio_Code "Visual Studio Code") die ook de configuratie van andere tools behandelt, bijvoorbeeld CodeSniffer en PHPUnit.
+Uit de Joomla! Documentatie: [Visual Studio Code](https://docs.joomla.org/Visual_Studio_Code) die ook de configuratie van andere tools behandelt, bijvoorbeeld CodeSniffer en PHPUnit.
 
 *Vertaald door openai.com*
 

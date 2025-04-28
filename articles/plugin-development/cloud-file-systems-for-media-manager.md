@@ -1,12 +1,12 @@
 <!-- Filename: J4.x:Cloud_File_Systems_for_Media_Manager / Display title: Cloud-bestandssystemen voor Media Manager -->
 
-<span id="main-portal-heading">GSoC 2017 Cloud File Systemen voor Media Manager Documentatie</span> [<img src="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/75px-Gsoc2016.png" decoding="async" srcset="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/113px-Gsoc2016.png 1.5x, https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/150px-Gsoc2016.png 2x" data-file-width="373" data-file-height="373" width="75" height="75" alt="Gsoc2016.png" />](https://docs.joomla.org/GSOC_2017 "GSOC 2017") Joomla!  4.x
+<span id="main-portal-heading">GSoC 2017 Cloud File Systemen voor Media Manager Documentatie</span> [<img src="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/75px-Gsoc2016.png" decoding="async" srcset="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/113px-Gsoc2016.png 1.5x, https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/150px-Gsoc2016.png 2x" data-file-width="373" data-file-height="373" width="75" height="75" alt="Gsoc2016.png" />](https://docs.joomla.org/GSOC_2017) Joomla!  4.x
 
 ## Introductie
 
 **Joomla! 4.x** wordt standaard geleverd met cloud-bestandssystemen voor de **Media Manager**. Met de vorige API was het maken van aangepaste bestandssystemen een moeilijke taak. Dankzij de nieuwe API is het nu eenvoudig om een aangepast bestandssysteem te maken. Als je een clouddienst wilt gebruiken met de nieuwe Media Manager, wordt geadviseerd om **OAuth2.0** te gebruiken.
 
-Dit document zal je begeleiden door belangrijke stappen om je eigen **Bestandssysteem Plugin** te maken om de **Media Manager** uit te breiden. Voordat je verder gaat, zorg ervoor dat je de basiskennis hebt over hoe je een plugin voor Joomla kunt ontwikkelen. [Deze tutorial](https://docs.joomla.org/J3.x:Creating_a_Plugin_for_Joomla "Special:MyLanguage/J3.x:Creating a Plugin for Joomla") zou moeten helpen.
+Dit document zal je begeleiden door belangrijke stappen om je eigen **Bestandssysteem Plugin** te maken om de **Media Manager** uit te breiden. Voordat je verder gaat, zorg ervoor dat je de basiskennis hebt over hoe je een plugin voor Joomla kunt ontwikkelen. [Deze tutorial](https://docs.joomla.org/J3.x:Creating_a_Plugin_for_Joomla) zou moeten helpen.
 
 ## Maak uw Filesystem-plug-in aan
 
