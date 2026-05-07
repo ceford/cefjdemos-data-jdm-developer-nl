@@ -4,7 +4,7 @@ Sinds Joomla 4.0 kunnen extensie-ontwikkelaars gebruikmaken van het vermogen van
 
 De wijzigingen in een release zullen op deze manier worden gepresenteerd:
 
-![changelog modal view](../../../en/images/developer-information/adding-changelog-example-1.png)
+![changelog modal view](../../../en/images/developer-information/adding-changelog/01-changelog-modal-view.png)
 
 De changelog wordt op twee verschillende plaatsen gebruikt.
 
@@ -12,7 +12,7 @@ De changelog wordt op twee verschillende plaatsen gebruikt.
 
 De installer zal de changelog van de versie die geïnstalleerd kan worden laten zien, indien beschikbaar.
 
-![changelog installer view](../../../en/images/developer-information/adding-changelog-update-view.png)
+![changelog installer view](../../../en/images/developer-information/adding-changelog/02-changelog-installer-view.png)
 
 Door hier op de Changelog-knop te klikken, wordt de changelog van de nieuwe beschikbare versie weergegeven.
 
@@ -20,7 +20,7 @@ Door hier op de Changelog-knop te klikken, wordt de changelog van de nieuwe besc
 
 De extensiebeheerder toont de wijzigingslijst van de momenteel geïnstalleerde extensie als deze beschikbaar is.
 
-![changelog installer view](../../../en/images/developer-information/adding-changelog-extension-view.png)
+![changelog extension view](../../../en/images/developer-information/adding-changelog/03-changelog-extension-view.png)
 
 Door op het versienummer hier te klikken, wordt de changelog van de momenteel geïnstalleerde versie weergegeven.
 

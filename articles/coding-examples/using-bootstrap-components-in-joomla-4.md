@@ -293,7 +293,7 @@ Waarschuwingen kunnen in HTML-code worden gebruikt zonder ondersteuning van Java
 
 Voorbeeldresultaat van het opnemen van een module in een artikel:
 
-![Bootstrap alert](../../../en/images/coding-examples/coding-examples-alert.png)
+![Bootstrap alert](../../../en/images/coding-examples/bootstrap-components/01-bootstrap-alert.png)
 
 Merk op dat zonder JavaScript-ondersteuning de waarschuwing er precies zo uitziet als hierboven, maar een klik op de sluitknop \[X\] de waarschuwing niet zal verwijderen. Ook zal de waarschuwing bij elke pagina-lading verschijnen.
 
@@ -321,7 +321,7 @@ Met deze stijl in de template user.css:
     }
 ```
 
-![Bootstrap buttons](../../../en/images/coding-examples/coding-examples-buttons.png)
+![Bootstrap buttons](../../../en/images/coding-examples/bootstrap-components/02-bootstrap-buttons.png)
 
 De knoppen wisselen tussen blauw en groen.
 
@@ -367,7 +367,7 @@ De Carousel biedt een diavoorstelling die door een reeks afbeeldingen of tekstpa
 
 Resultaat:
 
-![Bootstrap carousel](../../../en/images/coding-examples/coding-examples-carousel.jpg)
+![Bootstrap carousel](../../../en/images/coding-examples/bootstrap-components/03-bootstrap-carousel.jpg)
 
 ### Voorbeeld 4: Samenvouwen
 
@@ -389,7 +389,7 @@ Inklappen wordt veel gebruikt in Joomla en je hebt mogelijk geen module of plugi
 
 Resultaat:
 
-![Bootstrap collapse](../../../en/images/coding-examples/coding-examples-collapse.png)
+![Bootstrap collapse](../../../en/images/coding-examples/bootstrap-components/04-bootstrap-collapse.png)
 
 ### Voorbeeld 5: Dropdown
 
@@ -410,7 +410,7 @@ Dropdowns zijn schakelbare, contextuele overlays voor het weergeven van lijsten 
 
 Resultaat:
 
-![Bootstrap dropdown](../../../en/images/coding-examples/coding-examples-dropdown.png)
+![Bootstrap dropdown](../../../en/images/coding-examples/bootstrap-components/05-bootstrap-dropdown.png)
 
 ### Voorbeeld 6: Modaal
 
@@ -439,7 +439,7 @@ Het modale component opent een dialoogvenster in het midden van het scherm. Er z
 
 Resultaat:
 
-![Bootstrap modal](../../../en/images/coding-examples/coding-examples-modal.png)
+![Bootstrap modal](../../../en/images/coding-examples/bootstrap-components/06-bootstrap-modal.png)
 
 ### Voorbeeld 7: Offcanvas
 
@@ -455,7 +455,7 @@ Pop-overs zijn zoals tooltips, maar met een titel. Ze hebben enkele toegankelijk
 
 Resultaat:
 
-![Bootstrap alert](../../../en/images/coding-examples/coding-examples-popover.png)
+![Bootstrap alert](../../../en/images/coding-examples/bootstrap-components/08-bootstrap-popover.png)
 
 ### Voorbeeld 9: Scrollspy
 
@@ -502,7 +502,7 @@ Voorbeeldcode:
 
 Resultaat:
 
-![Bootstrap scrollspy](../../../en/images/coding-examples/coding-examples-scrollspy.png)
+![Bootstrap scrollspy](../../../en/images/coding-examples/bootstrap-components/09-bootstrap-scrollspy.png)
 
 Ook is enige styling nodig in user.css:
 
@@ -538,7 +538,7 @@ Tabs worden vaak gebruikt als navigatie-elementen in combinatie met dropdowns. B
 
 Resultaat:
 
-![Bootstrap tab](../../../en/images/coding-examples/coding-examples-tab.png)
+![Bootstrap tab](../../../en/images/coding-examples/bootstrap-components/10-bootstrap-tab.png)
 
 Vergeet niet zowel de Tab- als de Dropdown-opties te controleren zodat het dropdown-gedeelte werkt.
 
@@ -559,7 +559,7 @@ Toastmeldingen zijn lichte meldingen die zijn ontworpen om de pushmeldingen na t
 
 Resultaat:
 
-![Bootstrap toast](../../../en/images/coding-examples/coding-examples-toast.png)
+![Bootstrap toast](../../../en/images/coding-examples/bootstrap-components/11-bootstrap-toast.png)
 
 Merk op dat de Bootstrap-demo die een knop gebruikt om het Toast-bericht te tonen wat extra JavaScript nodig heeft. Het lijkt erop dat deze component een programmeur nodig heeft om er goed gebruik van te maken!
 
@@ -579,7 +579,7 @@ Een tooltip is een klein stukje tekst dat verschijnt wanneer je met de muis over
 
 Resultaat:
 
-![Bootstrap tooltip](../../../en/images/coding-examples/coding-examples-tooltip.png)
+![Bootstrap tooltip](../../../en/images/coding-examples/bootstrap-components/12-bootstrap-tooltip.png)
 
 ## Aanpak 2: Een Inhoudsplugin Gebruiken
 
@@ -711,7 +711,7 @@ Deze code zoekt naar klassenamen ingesteld in mod_custom en maakt de HTMLHelper-
 - Maak een menu-item voor een enkel artikel.
 - Test het:
 
-![Bootstrap modal module in article](../../../en/images/coding-examples/coding-examples-modal-module.png)
+![Bootstrap modal module in article](../../../en/images/coding-examples/bootstrap-components/13-bootstrap-modal-module-in-article.png)
 
 ### Een Modale Component met een Carrousel
 
@@ -781,6 +781,6 @@ Deze code zoekt naar klassenamen ingesteld in mod_custom en maakt de HTMLHelper-
 - Maak een nieuw menu-item voor een enkel artikel aan: Demo Modal Carousel
 - Test het:
 
-![Bootstrap modal carousel](../../../en/images/coding-examples/coding-examples-modal-carousel.png)
+![Bootstrap modal carousel](../../../en/images/coding-examples/bootstrap-components/14-bootstrap-modal-carousel.png)
 
 *Vertaald door openai.com*

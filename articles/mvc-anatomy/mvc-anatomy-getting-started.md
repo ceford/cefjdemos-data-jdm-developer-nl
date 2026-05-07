@@ -29,13 +29,11 @@ De bestanden voor de com_countrybase component zijn beschikbaar op GitHub. Je ku
 
 Deze lijst van landenbeheerder bevat vijf items om de afbeeldingsgrootte te minimaliseren. Joomla geeft normaal gesproken 20 items weer.
 
-![List of countries](../../../en/images/mvc-anatomy/com-countrybase-countries.png)
+![List of countries](../../../en/images/mvc-anatomy/mvc-anatomy-getting-started/01-admin-list-of-countries.png)
 
-## Sjablooncomponent
+The site display has been set to 5 items also:
 
-Om u te helpen met uw eigen component aan de slag te gaan, is er een [boilerplate component](https://github.com/ceford/j4xdemos-com-bpsrc/archive/refs/heads/master.zip) beschikbaar op Github. Download en pak dit uit in uw projectbestandenruimte, niet in de boomstructuur van uw testwebsite. Na het downloaden voert u alle wijzigingen uit die in de README worden aangegeven en u bent klaar om te beginnen.
-
-Er zijn ook een aantal gratis en commerciële extensiegeneratoren die je kunt proberen om een skeletcomponent te genereren voor je eigen doeleinden. [Joomla! Component Builder](https://www.joomlacomponentbuilder.com/) is gratis en lijkt uitgebreid.
+![List of countries in site view](../../../en/images/mvc-anatomy/mvc-anatomy-getting-started/02-site-list-of-countries.png)
 
 *Vertaald door openai.com*
 

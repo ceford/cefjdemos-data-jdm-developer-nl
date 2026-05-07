@@ -38,7 +38,7 @@ cefjdemos-plg-toc
 
 Dit is de structuur zoals te zien in de VSCode of VSCodium IDE:
 
-![Plugin development file structure in vscodium](../../../en/images/plugins/cefjdemostoc-vscodium.png)
+![Plugin development file structure in vscodium](../../../en/images/plugin-development/content-toc/01-file-structure-in-vscodium.png)
 
 ## Het Manifestbestand
 
@@ -238,7 +238,7 @@ De `default.php` code hierboven laat zien hoe een aangepaste stijlsheet voor de 
 
 ## Resultaat
 
-![The resulting table of contents](../../../en/images/plugins/cefjdemostoc-result.png)
+![The resulting table of contents](../../../en/images/plugin-development/content-toc/02-result-table-of-contents.png)
 
 *Vertaald door openai.com*
 

@@ -6,7 +6,7 @@ Nieuwkomers kunnen de indruk krijgen dat MySQL en MariaDB databases zijn en kunn
 
 De onderstaande screenshot toont een deel van een lijst met meer dan 30 databases, gecreëerd voor het testen van verschillende Joomla-installaties en extensieprojecten.
 
-![Phypadmin screenshot of list of databases](../../../en/images/getting-started/phpmyadmin-databases.png)
+![Phypadmin screenshot of list of databases](../../../en/images/getting-started/databases/01-phpmyadmin-list-of-databases.png)
 
 Een bijkomende opmerking: de sorteringen zijn meestal utf8mb4_0900_ai_ci:
 

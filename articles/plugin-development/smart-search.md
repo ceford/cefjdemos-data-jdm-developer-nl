@@ -31,7 +31,7 @@ cefjdemos-plg-finder-jdocmanual
 
 In VSCodium ziet het er zo uit:
 
-![Plugin development file structure in vscodium](../../../en/images/plugins/jdocmanual-vscodium.png)
+![Plugin development file structure in vscodium](../../../en/images/plugin-development/smart-search/01-files-in-vscodium.png)
 
 ## Pas de code aan
 
@@ -132,7 +132,7 @@ In de **Inhoud / Site Modules** selecteer **Nieuw** en installeer een nieuwe **S
 
 Uiteindelijk zou je aangepaste slimme zoekplugin moeten werken. Dit is een voorbeeld van een resultatenpagina voor Jdocmanual die naar een term op deze pagina zoekt. De resultatenpagina laat het zoekformulier in de titelbalk weg omdat het aanwezig is in de pagina-inhoud.
 
-![Smart search result](../../../en/images/plugins/jdocmanual-search-result.png)
+![Smart search result](../../../en/images/plugin-development/smart-search/02-smart-search-result.png)
 
 Een terzijde: de System - Joomla Accessibility Checker-plug-in geeft aan dat er 3 fouten zijn met betrekking tot het gegevensinvoerformulier *Zoektermen*. Dat vereist een kernreparatie of overschrijving.
 

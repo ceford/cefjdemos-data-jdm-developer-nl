@@ -14,7 +14,7 @@ In dit voorbeeld bevinden Joomla-testsites zich in submappen van de documentroot
 
 Dit is een schermafbeelding van een deel van een Sites maplijst die een selectie van vele testsites toont:
 
-![multiple sites on mac](../../../en/images/getting-started/developer-file-structure-mac-sites.png)
+![multiple sites on mac](../../../en/images/getting-started/developer-file-structure/01-multiple-sites-on-mac.png)
 
 Elk wordt benaderd via de naam van zijn submap. Voorbeelden:
 
@@ -27,7 +27,7 @@ Er zijn omstandigheden waarin je de voorkeur kunt geven aan het creëren van afz
 
 Als je dit nog niet hebt gedaan, moet je vertrouwd raken met de structuur van een Joomla-website. De volgende illustratie toont een typische Joomla-bestands- en mapstructuur, met de Administrator-map uitgebreid om de inhoud ervan te tonen.
 
-![joomla file structure with administrator expanded](../../../en/images/getting-started/developer-file-structure-mac-joomla.png)
+![joomla file structure with administrator expanded](../../../en/images/getting-started/developer-file-structure/02-file-structure-admin-expanded.png)
 
 Dit is waar de werkende code zal worden geïnstalleerd. De broncode bevindt zich ergens anders.
 
@@ -35,7 +35,7 @@ Dit is waar de werkende code zal worden geïnstalleerd. De broncode bevindt zich
 
 De locatie van je extensiecode is een persoonlijke keuze. Ik houd ervan om mijn extensiecode te bewaren in een bestandsstructuur die geschikt is voor het maken van een installeerbaar zip-bestand. De basis van mijn structuur is /Users/username/git omdat ik git kan spellen en ik gebruik git voor versiebeheer. Je hoeft dat niet te doen - git zal worden behandeld in een aparte tutorial. Mijn git-oudermap bevat veel submappen die elk aparte git-mappen kunnen gebruiken voor versiebeheer. Dit is een screenshot die een gedeeltelijke lijst van projecten toont:
 
-![joomla file structure project folders](../../../en/images/getting-started/developer-file-structure-mac-project-folders.png)
+![joomla file structure project folders](../../../en/images/getting-started/developer-file-structure/03-project-folders.png)
 
 Merk op dat sommige van de mapnamen beginnen met `j4xdemos`, wat ik heb aangenomen als het eerste deel van de namespace die ik gebruik voor mijn projecten die zijn gemaakt voor Joomla 4 tutorialdoeleinden. Het is niet noodzakelijk als onderdeel van de mapnaam, maar het is iets om over na te denken: het eerste deel van je namespace moet iets unieks zijn voor jou of je organisatie. Ik heb sindsdien `cefjdemos` aangenomen als mijn namespace-prefix omdat het persoonlijker is en niet specifiek voor een Joomla-versie.
 
@@ -45,7 +45,7 @@ Als we j4xdemos-com-mywalks als voorbeeld nemen, bevindt alle code die in de ext
 
 In de volgende illustratie is de map j4xdemos-com-mywalks geopend in VSCodium om de projectcode-structuur te tonen. Het bestand mywalks.xml is een manifestbestand dat Joomla vertelt wat waar te installeren. De admin- en site-mappen bevatten code die naar administrator/components/com_mywalks en components/com_mywalks gaat.
 
-![Project folder open in vscodium](../../../en/images/getting-started/developer-file-structure-mac-vscodium.png)
+![Project folder open in vscodium](../../../en/images/getting-started/developer-file-structure/04-project-open-in-vscodium.png)
 
 Het zou duidelijk moeten zijn dat zelfs een kleine component behoorlijk veel mappen en bestanden nodig heeft. Er zijn sjablonen voor uitbreidingsgereedschappen beschikbaar om snel een skeletcomponent te maken. Deze worden elders behandeld. ToDo
 

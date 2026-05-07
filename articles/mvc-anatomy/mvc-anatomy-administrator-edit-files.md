@@ -227,7 +227,7 @@ HTMLHelper::_('behavior.keepalive');
 
 Je kunt door veldsets van formulieren en velden binnen elke veldset heen fietsen. Dat kan de uitvoer van complexe formulieren met veel tabbladen vereenvoudigen.
 
-![country edit form](../../../en/images/mvc-anatomy/com-countrybase-edit-country.png)
+![country edit form](../../../en/images/mvc-anatomy/mvc-anatomy-administrator-edit-files/01-country-edit-form/01-country-edit-form.png)
 
 *Vertaald door openai.com*
 

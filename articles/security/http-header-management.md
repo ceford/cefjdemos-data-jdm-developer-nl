@@ -10,7 +10,7 @@ Joomla 4 introduceerde een HTTP Header-systeem dat is ontworpen om site-eigenare
 
 Navigeer naar **Systeem → Plugins → Systeem - HTTP Headers** om het configuratieformulier van de plugin te openen.
 
-![System http headers plugin form](../../../en/images/security/security-http-headers-plugin.png)
+![System http headers plugin form](../../../en/images/security/http-header-management/01-system-http-headers-plugin-form.png)
 
 - **X-Frame Opties** Dit is standaard ingeschakeld, maar de [documentatie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) zegt dat het verouderd is en dat een *frame-ancestors* beleid gebruikt moet worden.
 - **Referrer-Policy** De standaard is *strict-origin-when-cross-origin*.
@@ -35,7 +35,7 @@ Met het subformulier **Forceer HTTP-headers** kunt u ook de volgende headers afd
 
 ### Strict-Transport-Security (HSTS)-tabblad
 
-![strict transport security settings](../../../en/images/security/security-http-headers-hsts.png)
+![strict transport security settings](../../../en/images/security/http-header-management/02-strict-transport-security-settings.png)
 
 Gebruik de knop *Inline Help Wisselen* voor informatie over elke parameter. Geïllustreerde referentie:
 
@@ -43,7 +43,7 @@ Gebruik de knop *Inline Help Wisselen* voor informatie over elke parameter. Geï
 
 ### Content-Security-Policy (CSP) tabblad
 
-![Content security policy options](../../../en/images/security/security-http-headers-csp.png)
+![Content security policy options](../../../en/images/security/http-header-management/03-content-security-policy-options.png)
 
 Zodra ingeschakeld, kun je de client instellen waar je de geconfigureerde CSP wilt afdwingen, zodat je `site`, `beheerder` of `beide` kunt instellen. Een CSP moet zowel op de frontend als backend worden toegepast. Geïllustreerde referenties:
 
