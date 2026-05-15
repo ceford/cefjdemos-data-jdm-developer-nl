@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Developer:_File_Structure / Display title: Voorbeeldbestandsstructuur -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Developer:_File_Structure",
+  "title": "Voorbeeldbestandsstructuur ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Inleiding
 

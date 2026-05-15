@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Cloud_File_Systems_for_Media_Manager / Display title: Cloud-bestandssystemen voor Media Manager -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Cloud_File_Systems_for_Media_Manager",
+  "title": "Cloud-bestandssystemen voor Media Manager ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 <span id="main-portal-heading">GSoC 2017 Cloud File Systemen voor Media Manager Documentatie</span> [<img src="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/75px-Gsoc2016.png" decoding="async" srcset="https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/113px-Gsoc2016.png 1.5x, https://docs.joomla.org/images/thumb/7/7d/Gsoc2016.png/150px-Gsoc2016.png 2x" data-file-width="373" data-file-height="373" width="75" height="75" alt="Gsoc2016.png" />](https://docs.joomla.org/GSOC_2017) Joomla!  4.x
 

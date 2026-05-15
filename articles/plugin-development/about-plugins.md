@@ -1,4 +1,11 @@
-<!-- Filename: https://manual.joomla.org/docs/building-extensions/plugins/ / Display title: Over plug-ins -->
+<!--
+{
+  "source": "https://docs.joomla.org/https:",
+  "title": "Over plug-ins ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Evolutie van Plugincode
 

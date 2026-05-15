@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:MVC_Anatomy:_Site_Files / Display title: MVC-anatomie: Sitebestanden -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:MVC_Anatomy:_Site_Files",
+  "title": "MVC-anatomie: Sitebestanden ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Bestandsstructuur
 

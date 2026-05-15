@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Joomla_Core_APIs / Display title: Joomla Core API's -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Joomla_Core_APIs",
+  "title": "Joomla Core API's ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 Deze pagina somt de eindpunten op die beschikbaar zijn in Joomla aan de hand van voorbeelden van curl-commando's. Het is voorbereid voor Joomla 4 en vereist controle op conformiteit met de huidige Joomla-versies.
 

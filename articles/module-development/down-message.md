@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:J4_Module_example_-_Mydownmsg / Display title: Voorbeeld: Site niet beschikbaar bericht -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:J4_Module_example_-_Mydownmsg",
+  "title": "Voorbeeld: Site niet beschikbaar bericht ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introductie
 
@@ -51,7 +58,7 @@ cefjdemos-plg-toc
 
 Dit is de structuur zoals te zien in de VSCode of VSCodium IDE:
 
-![Plugin development file structure in vscodium](../../../en/images/modules/down-message/01-files-in-vscodium.png)
+![Plugin development file structure in vscodium](../../../en/images/module-development/down-message/01-files-in-vscodium.png)
 
 ## Het Manifestbestand
 
@@ -362,21 +369,21 @@ In de lijst met gemeenschappelijke parameters aan de rechterkant
 4. Selecteer op het tabblad **Menu-toewijzing** **Op alle pagina's**.
 5. **Opslaan** en je bent klaar om de weergave van de site te controleren.
 
-![the module edit form](../../../en/images/modules/down-message/02-module-edit-form.png)
+![the module edit form](../../../en/images/module-development/down-message/02-module-edit-form.png)
 
 ## Testen
 
 Dit is hoe het bericht in het Engels verschijnt:
 
-![site down message in english](../../../en/images/modules/down-message/03-module-result-en.png)
+![site down message in english](../../../en/images/module-development/down-message/03-module-result-en.png)
 
 In het Duits:
 
-![site down message in german](../../../en/images/modules/down-message/04-module-result-de.png)
+![site down message in german](../../../en/images/module-development/down-message/04-module-result-de.png)
 
 En Frans:
 
-![site down message in french](../../../en/images/modules/down-message/05-module-result-fr.png)
+![site down message in french](../../../en/images/module-development/down-message/05-module-result-fr.png)
 
 ## Site bijwerken en wijziglogboek
 

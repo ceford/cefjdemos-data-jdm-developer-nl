@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Namespace_Conventions_In_Joomla / Display title: Naamruimten -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Namespace_Conventions_In_Joomla",
+  "title": "Naamruimten ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introductie
 

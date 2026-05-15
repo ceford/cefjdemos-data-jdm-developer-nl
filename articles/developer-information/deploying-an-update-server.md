@@ -1,4 +1,11 @@
-<!-- Filename: Deploying_an_Update_Server / Display title: Update-servers -->
+<!--
+{
+  "source": "https://docs.joomla.org/Deploying_an_Update_Server",
+  "title": "Update-servers ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Achtergrond
 

@@ -1,4 +1,11 @@
-<!-- Filename: Creating_a_Smart_Search_plug-in / Display title: Voorbeeld: Slimme Zoekopdracht -->
+<!--
+{
+  "source": "https://docs.joomla.org/Creating_a_Smart_Search_plug-in",
+  "title": "Voorbeeld: Slimme Zoekopdracht ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introductie
 

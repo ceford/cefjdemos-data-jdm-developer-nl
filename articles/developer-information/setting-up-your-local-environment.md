@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Setting_Up_Your_Local_Environment / Display title: Een Lokale Omgeving Opzetten -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Setting_Up_Your_Local_Environment",
+  "title": "Een Lokale Omgeving Opzetten ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Snelstartgids
 

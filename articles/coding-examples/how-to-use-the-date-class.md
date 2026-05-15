@@ -1,4 +1,11 @@
-<!-- Filename: How_to_use_JDate / Display title: Hoe de Date-klasse te gebruiken -->
+<!--
+{
+  "source": "https://docs.joomla.org/How_to_use_JDate",
+  "title": "Hoe de Date-klasse te gebruiken ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introductie
 De Date-klasse van Joomla is een hulpklasse, uitgebreid van de DateTime-klasse van PHP, die ontwikkelaars in staat stelt om datumopmaak efficiënter te beheren. De klasse stelt ontwikkelaars in staat om datums te formatteren voor leesbare strings, MySQL-interactie, UNIX-tijdstampaantallen en biedt ook hulpmethoden voor het werken in verschillende tijdzones.

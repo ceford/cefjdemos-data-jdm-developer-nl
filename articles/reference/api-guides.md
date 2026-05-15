@@ -1,4 +1,11 @@
-<!-- Filename: API_Guides / Display title: API-gidsen -->
+<!--
+{
+  "source": "https://docs.joomla.org/API_Guides",
+  "title": "API-gidsen ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 Deze pagina bevat een index naar de set van Joomla API-gidsen. Deze gidsen zijn bedoeld om u te helpen begrijpen hoe u deze Joomla-functies kunt gebruiken in uw eigen Joomla-extensies.
 

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Automated_System_Testing / Display title: Geautomatiseerd Systeemtesten -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Automated_System_Testing",
+  "title": "Geautomatiseerd Systeemtesten ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Achtergrond
 

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:J4_Plugin_example_-_Table_of_Contents / Display title: Voorbeeld: Inhoudsopgave -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:J4_Plugin_example_-_Table_of_Contents",
+  "title": "Voorbeeld: Inhoudsopgave ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introductie
 

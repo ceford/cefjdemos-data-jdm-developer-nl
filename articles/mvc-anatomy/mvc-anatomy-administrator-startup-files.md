@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:MVC_Anatomy:_Administrator_Startup_Files / Display title: MVC Anatomie: Administrator opstartbestanden -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:MVC_Anatomy:_Administrator_Startup_Files",
+  "title": "MVC Anatomie: Administrator opstartbestanden ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Overzicht van Administratorbestanden
 

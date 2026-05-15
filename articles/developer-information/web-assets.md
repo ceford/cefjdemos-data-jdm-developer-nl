@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Web_Assets / Display title: Webactiva  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Web_Assets",
+  "title": "Webactiva  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Over Webassets
 

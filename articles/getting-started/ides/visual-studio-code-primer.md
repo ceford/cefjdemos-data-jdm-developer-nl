@@ -1,4 +1,11 @@
-<!-- Filename: Visual_Studio_Code_Primer / Display title: Visual Studio Code -->
+<!--
+{
+  "source": "https://docs.joomla.org/Visual_Studio_Code_Primer",
+  "title": "Visual Studio Code ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## VS Code - Een Populaire Gratis IDE
 
@@ -100,7 +107,7 @@ In de Globale Configuratie van Joomla, stel *Debug Systeem* in op *Ja* en *Fouto
 
 Wanneer je een pagina opent die de buggevoelige module bevat, zie je een stack trace die je vertelt waar een fout is veroorzaakt.
 
-![Stack trace](../../../en/images/getting-started/vscode-primer/01-stack-trace.png)
+![Stack trace](../../../../en/images/getting-started/ides/visual-studio-code-primer/01-stack-trace.png)
 
 Soms bevindt de codeerfout zich op de eerste regel van de stacktrace. Anders, als de fout wordt geactiveerd in bibliotheekcode, bijvoorbeeld door ongeldige gegevens door te geven aan een databasefunctie, kan de codeerfout verder naar beneden in de lijst van functieroepen staan.
 
@@ -108,7 +115,7 @@ Soms bevindt de codeerfout zich op de eerste regel van de stacktrace. Anders, al
 
 In VS Code, gebruik de menu-optie Bestand / Map openen om de map te vinden en te openen die je lokale kopie van de *mod_debugme* extensiecode bevat. Je zou iets dergelijks moeten zien:
 
-![VS Code screen](../../../en/images/getting-started/vscode-primer/02-vscode-screen.png)
+![VS Code screen](../../../../en/images/getting-started/ides/visual-studio-code-primer/02-vscode-screen.png)
 
 Je kunt het probleem mogelijk diagnosticeren door gewoon de code te lezen. In het geval van de fout *Class "DebugHelper" not found* zul je zien dat een *use* statement een paar regels eerder is uitgecommentarieerd. Het vergeten om een *use* statement in te voegen is een veelvoorkomende fout tijdens de initiële ontwikkeling!
 
@@ -270,7 +277,7 @@ Een paar niet zo voor de hand liggende problemen:
 
 Als alles is opgelost, is dit wat je misschien zult zien:
 
-![Site view of debugged module working](../../../en/images/getting-started/vscode-primer/03-debugme-fixed.png)
+![Site view of debugged module working](../../../../en/images/getting-started/ides/visual-studio-code-primer/03-debugme-fixed.png)
 
 Taartdagen?
 

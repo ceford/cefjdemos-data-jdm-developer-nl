@@ -1,4 +1,11 @@
-<!-- Filename: Working_with_git_and_github / Display title: Werken met git en github -->
+<!--
+{
+  "source": "https://docs.joomla.org/Working_with_git_and_github",
+  "title": "Werken met git en github ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introductie
 
@@ -48,7 +55,7 @@ Op GitHub kun je projecten vinden in zogenaamde Repositories. Binnen een project
 
 Op je testcomputer ga je de **4.2-dev** branch gebruiken. Je kunt deze branch echter niet wijzigen, omdat je niet de eigenaar ervan bent. Je moet er een kopie van maken. Op GitHub wordt dit een Fork genoemd. Je bent de eigenaar van die kopie, dus je kunt deze wijzigen. Na het wijzigen van je fork kun je een Pull Request indienen voor de veranderingen die je hebt aangebracht. Daarover later meer. Je kunt een branch forken door op de Fork-knop in de [Joomla! CMS Github Repository](https://github.com/joomla/joomla-cms) te drukken. Deze knop bevindt zich rechtsboven op de pagina.
 
-![Fork joomla in github](../../../en/images/getting-started/working-with-git-and-github/01-fork-joomla-in-github.png)
+![Fork joomla in github](../../../en/images/developer-information/working-with-git-and-github/01-fork-joomla-in-github.png)
 
 Na het forken moet je Joomla! installeren op je lokale computer. Ga naar de map waar je bestanden kunt plaatsen die door je webserver worden gebruikt. Veel programma's gebruiken een map genaamd `htdocs`. Sommigen gebruiken `www` en sommigen gebruiken geheel andere mappen. Het hangt allemaal af van of je Windows, Mac of Linux gebruikt. Uiteindelijk zal je webroot verschillende mappen bevatten voor verschillende websites. Zodra je in je webrootmap bent, gebruik je in een open Terminal-venster het cd-commando om de huidige map te wijzigen naar de webroot. Of, in je bestandsverkenner GUI, zoek de webrootmap, druk op de rechtermuisknop en klik op: "Git Bash Here" of "Open Terminal" of iets dergelijks.
 

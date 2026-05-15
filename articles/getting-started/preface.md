@@ -1,4 +1,11 @@
-<!-- Filename: Voorwoord / Display title: Voorwoord -->
+<!--
+{
+  "source": "https://docs.joomla.org/Voorwoord",
+  "title": "Voorwoord ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Over Dit Handboek
 

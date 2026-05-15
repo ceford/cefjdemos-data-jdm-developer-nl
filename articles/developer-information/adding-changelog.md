@@ -1,4 +1,11 @@
-<!-- Filename: Adding_changelog_to_your_manifest_file / Display title: Een wijzigingenlogboek toevoegen -->
+<!--
+{
+  "source": "https://docs.joomla.org/Adding_changelog_to_your_manifest_file",
+  "title": "Een wijzigingenlogboek toevoegen ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 Sinds Joomla 4.0 kunnen extensie-ontwikkelaars gebruikmaken van het vermogen van Joomla om een changelog-bestand te lezen en een visuele weergave van de changelog te geven. Als een bepaalde versie niet in de changelog wordt gevonden, zal de changelog-knop niet worden getoond.
 

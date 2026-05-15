@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Developer:_Required_Software / Display title: Installeer Joomla -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Developer:_Required_Software",
+  "title": "Installeer Joomla ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Samenvatting
 

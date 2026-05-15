@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:MVC_Anatomy:_Getting_Started / Display title: MVC Anatomie: Aan de slag -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:MVC_Anatomy:_Getting_Started",
+  "title": "MVC Anatomie: Aan de slag ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introductie
 
